@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./kernel/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script type="text/javascript" src="./kernel/js/heure.js"></script>
 
-    <title>Hello, world!</title>
+    <title>Clemessy diapo</title>
   </head>
   <body>
 <div class="bd-example">
