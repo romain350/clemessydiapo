@@ -20,17 +20,17 @@
 </div>
     <div class="carousel-inner">
 		<div class="carousel-item active"  data-interval="<?php echo $setting['time']; ?>">
-			<img src="./kernel/images/obligatoire.png" class="d-block w-100" alt="...">
+			<img src="./kernel/images/base.png" class="d-block w-100" alt="...">
 			<div class="carousel-caption d-none d-md-block">
 			</div>
 		</div>
 			<?php
 class listFiles {
-	private $extension		= 'jpg';		// extension des fichiers à lister
+	private $extension		= 'png';		// extension des fichiers à lister
 	private $current_path	= '';		// chemin du répertoire en cours
 	private $dirs_in_dir	= array();	// tableau des répertoires d'un répertoire
 	private $files_in_dir	= array();	// tableau des fichiers d'un répertoire
-	public function listFiles($Path = './diaporama', $extension = 'jpg') {
+	public function listFiles($Path = './diaporama', $extension = 'png') {
 		$this->extension = $extension;
 		$this->listDirs($Path);
 	}
@@ -72,7 +72,7 @@ class listFiles {
 			$pathinfo = pathinfo($file);
 			if ($pathinfo['extension'] == $this->extension) {
 				$href = $this->current_path.'/'.$file;
-				if ($pathinfo['extension'] == 'jpg') {
+				if ($pathinfo['extension'] == 'png') {
 						echo '
 						<div class="carousel-item"  data-interval="5000">
 							<img src="'.$href.'" class="d-block w-100" alt="...">
