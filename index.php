@@ -1,15 +1,16 @@
+<?php require ('./kernel/config.php'); ?>
 <!doctype html>
 <html lang="fr">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<link rel="icon" href="./kernel/css/icon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./kernel/css/bootstrap.css">
 	<script type="text/javascript" src="./kernel/js/heure.js"></script>
 
-    <title>Clemessy diapo</title>
+    <title><?php echo $setting['titre']; ?></title>
   </head>
   <body>
 <div class="bd-example">
@@ -18,17 +19,17 @@
 <span id="date_heure"></span>
 </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active"  data-interval="<?php echo $setting['time']; ?>">
         <img src="./kernel/images/1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-interval="<?php echo $setting['time']; ?>">
         <img src="./kernel/images/2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-interval="<?php echo $setting['time']; ?>">
         <img src="./kernel/images/3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
         </div>
